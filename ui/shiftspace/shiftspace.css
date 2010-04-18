@@ -91,7 +91,7 @@ ul.urls {list-style: none; display: inline; margin: 0;}
 html>body .external {border-bottom: none;}
 .external:after {content: " \274F"; font-size: smaller; color: #77B;}
 
-.incremental, .incremental *, .incremental *:after {color: #DDE; visibility: visible;}
+.incremental, .incremental *, .incremental *:after {color:#cde4d3; visibility: visible;}
 img.incremental {visibility: hidden;}
 .slide .current {color: #F63B02;}
 
@@ -114,4 +114,22 @@ body{
   color: #399762;
   text-align: center;
   font-size: 2em;
+}
+
+.incremental, .incremental *, .incremental *:after {color:#cde4d3;}
+
+.slide.full{
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.slide.full embed,
+.slide.full object{
+  width: 100%;
+  height: 100%;
+  margin: 0 auto;
+  text-align: center;
 }

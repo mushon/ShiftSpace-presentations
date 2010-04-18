@@ -282,6 +282,8 @@ function keys(key) {
 	return false;
 }
 
+/*
+// Commenting out the click advance as it DOES conflict with Flash
 function clicker(e) {
 	number = undef;
 	var target;
@@ -298,6 +300,7 @@ function clicker(e) {
 		}
 	}
 }
+*/
 
 function findSlide(hash) {
 	var target = null;
