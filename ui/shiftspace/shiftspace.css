@@ -59,6 +59,18 @@ div.long {font-size: 0.75em;}
 .slide h3 {font-size: 130%;}
 h1 abbr {font-variant: small-caps;}
 
+div#controls {position: absolute; left: 50%; bottom: 0;
+  width: 50%;
+  text-align: right; font: bold 0.9em Verdana, Helvetica, sans-serif;}
+html>body div#controls {position: fixed; padding: 0 0 1em 0;
+  top: auto;}
+div#controls form {position: absolute; bottom: 0; right: 0; width: 100%;
+  margin: 0; padding: 0;}
+#controls #navLinks a {padding: 0; margin: 0 0.5em; 
+  background: #005; border: none; color: #779; 
+  cursor: pointer;}
+#controls #navList {height: 1em;}
+#controls #navList #jumplist {position: absolute; bottom: 0; right: 0; background: #DDD; color: #227;}
 
 #currentSlide {text-align: center; font-size: 0.5em; color: #449;}
 
@@ -84,7 +96,6 @@ img.incremental {visibility: hidden;}
 .slide .current {color: #F63B02;}
 
 
-/* Custom styles ***************************************************/
 
 body{
   background: #F8F7F3;
@@ -107,8 +118,6 @@ body{
 
 .incremental, .incremental *, .incremental *:after {color:#cde4d3;}
 
-/* Full Slide ******************************************************/
-
 .slide.full{
   padding: 0;
   height: 100%;
@@ -125,25 +134,21 @@ body{
   text-align: center;
 }
 
-/* Controls ********************************************************/
-
-div#controls {position: absolute; left: 50%; bottom: 0;
-  width: 50%;
-  text-align: right; font: bold 0.9em GoudyBookletter1911Regular, Georgia, Serif;}
-html>body div#controls {position: fixed; padding: 0 0 1em 0;
-  top: auto;}
-div#controls form {
-  position: absolute;
-  bottom: 0; right: 0; width: 100%;
-  margin: 0; padding: 0;}
-  
-#controls #navLinks a {
-  padding: 0;
-  margin: 0 0.5em;
-  background: none;
-  border: none;
-  color: #399762; 
-  cursor: pointer;
+/* cheat for incremental "animation" */
+#anim {
+	position:relative;
+	top:0;
+	left:15%;
 }
-#controls #navList {height: 1em;}
-#controls #navList #jumplist {position: absolute; bottom: 0; right: 0; background: #DDD; color: #227;}
+
+img#m01, img#m02, img#m03, img#m04 {
+	position:absolute;
+	top:0;
+	left:0;
+}
+
+img#m05, img#m06, img#m07 {
+	position:absolute;
+	top:300px;
+	//left:33%;
+}
