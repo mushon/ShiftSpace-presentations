@@ -6,6 +6,8 @@
 <head>
 <title>ShiftSpace StopWork Presentation</title>
 <!-- metadata -->
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> 
+
 <meta name="generator" content="S5" />
 <meta name="version" content="S5 1.1" />
 <meta name="presdate" content="20050728" />
@@ -15,13 +17,17 @@
 <meta name="defaultView" content="slideshow" />
 <meta name="controlVis" content="hidden" />
 <!-- style sheet links -->
-<link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj" />
+<!-- ShiftSpace stuff -->
+<link rel="stylesheet" href="ui/shiftspace/shiftspace.css" type="text/css" media="projection" id="slideProj"/>
+<!-- <link rel="stylesheet" href="ui/default/slides.css" type="text/css" media="projection" id="slideProj" /> -->
 <link rel="stylesheet" href="ui/default/outline.css" type="text/css" media="screen" id="outlineStyle" />
 <link rel="stylesheet" href="ui/default/print.css" type="text/css" media="print" id="slidePrint" />
 <link rel="stylesheet" href="ui/default/opera.css" type="text/css" media="projection" id="operaFix" />
 <!-- S5 JS -->
 <script src="ui/default/slides.js" type="text/javascript"></script>
+
 </head>
+
 <body>
 
 <div class="layout">
@@ -42,34 +48,41 @@
 	<h1>an open-source layer above any website</h1>
 </div>
 
-<div class="slide">
+<div class="slide full">
 	<img src="images/timeline.jpg" />
 	<!-- hey what do you want to do with this? -->
 </div>
 
 <div class="slide">
 	<h1>We want to talk about:</h1>
-	<ul class="incremental">
+  <ul class="incremental">
 		<li>How it works/Demo</li>
 		<li>What we're doing now</li>
 		<li>Community/Development</li>
 	</ul>
 </div>
 
-
 <!-- I have these as 3 separate slides, but you probably want to render them down to just 1 swf -->
-<div class="slide">
-	<img src="images/client_browser_1.jpg" />
+<!--
+<div class="slide full">
+	<object>
+    <param name="movie" value="images/shiftspace_server-host.swf">
+    <param name="wmode" value="transparent">
+    <embed src="images/shiftspace_server-host.swf" wmode="transparent"></embed>
+  </object>
 </div>
+-->
 
-<div class="slide">
-	<img src="images/client_browser_2.jpg" />
-</div>
+<div class="slide full">
+	<object classid="clsid:d27cdb6e-ae6d-11cf-96b8-444553540000" codebase="http://download.macromedia.com/pub/shockwave/cabs/flash/swflash.cab#version=8,0,0,0" id="shiftspace_server-host" align="middle">
+  	<param name="allowScriptAccess" value="sameDomain" />
+  	<param name="allowFullScreen" value="false" />
+  	<param name="movie" value="images/shiftspace_server-host.swf" />
+  	<param name="quality" value="high" />
+  	<embed src="images/shiftspace_server-host.swf" quality="high" name="shiftspace_server-host" align="middle" allowScriptAccess="sameDomain" allowFullScreen="false" type="application/x-shockwave-flash" pluginspage="http://www.adobe.com/go/getflashplayer" />
+	</object>
 
-<div class="slide">
-	<img src="images/client_browser_3.jpg" />
 </div>
-<!-- ... -->
 
 <div class="slide">
 	<h1>User 1.0 Alpha</h1>
@@ -80,27 +93,49 @@
 </div>
 
 <div class="slide">
-	<h1>API, and § as a platform</h1>
+	<h1>&sect; as a platform</h1>
 	<ul class="incremental">
+		<li>Introducing: the API</li>
 		<li>Plugin-less approach</li>
-		<li>example: MOMA site</li>
 	</ul>
+</div>
+
+<div class="slide">
+	<h1>An Example: MoMA.org</h1>
+	<div class="imgcon" id="anim">
+		<img src="images/moma_1.jpg" id="m01" alt="" />
+		<img src="images/moma_2.jpg" alt="" id="m02" class="incremental" />
+		<img src="images/moma_3.jpg" alt="" id="m03" class="incremental" />
+		<img src="images/moma_4.jpg" alt="" id="m04" class="incremental" />
+	</div>
+	
 </div>
 
 <div class="slide">
 	<h1>What's next?</h1>
 	<ul class="incremental">
 		<li>HTML5 video annotation?</li>
-		<li>CMS/blog platform integration</li>
+		<li>CMS/blog platform integration?</li>
 	</ul>
 </div>
 
 <div class="slide">
-	<h1>Your input</h1>
+	<h1>Branching Out</h1>
 	<ul class="incremental">
-		<li>Reach out to other dev communities</li>
-		<li>Would you like to develop your own plugins using our API?</li>
+		<li>Link up with other dev communities/other services</li>
+				<center><img src="images/others_2.png" id="m05" class="incremental" /></center>
+				<img src="images/others_3.png" id="m06" class="incremental" />
+				<img src="images/others_4.png" id="m07" class="incremental" />				
+
+
+		<li>Help developers build plugins using the &sect; API</li>
 	</ul>
+</div>
+
+<div class="slide">
+	<h1>Thank you!</h1>
+	<h2>Questions?  Suggestions?</h2>
+	<p style="text-decoration:underline">info@shiftspace.org</p>
 </div>
 
 </body>
