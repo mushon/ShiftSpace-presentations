@@ -1,8 +1,0 @@
-issues for monday:
-what is shiftspace (include API, proxy, MOMA (about 2 slides), pushed us towards pluginless approach) 
-newsshift, MEDAN
-give demo
-questions form the audience: workshops? new developers?
-
-What's new?
-API: 

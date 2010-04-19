@@ -126,6 +126,10 @@ body{
   text-align: center;
 }
 
+.slide.tight{
+  padding:1.5em 4% 4%;
+}
+
 .slide.full embed,
 .slide.full object{
   width: 100%;
@@ -135,13 +139,13 @@ body{
 }
 
 /* cheat for incremental "animation" */
-#anim {
+.imgcon {
 	position:relative;
 	top:0;
 	left:15%;
 }
 
-img#m01, img#m02, img#m03, img#m04 {
+.imgcon img {
 	position:absolute;
 	top:0;
 	left:0;
