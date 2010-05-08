@@ -14,8 +14,10 @@
 }
 
 :link, :visited {text-decoration: none; color: #00C;}
+/*
 #controls :active {color: #88A !important;}
 #controls :focus {outline: 1px dotted #227;}
+*/
 h1, h2, h3, h4 {font-size: 100%; margin: 0; padding: 0; font-weight: inherit;}
 ul, pre {margin: 0; line-height: 1em;}
 html, body {margin: 0; padding: 0;}
@@ -104,6 +106,15 @@ body{
   color: #399762;
 }
 
+ul.no-bul{
+  list-style: none;
+}
+
+.deemph,
+#currentSlide{
+  color: #99908b;
+}
+
 .slide{
   text-align: center;
 }
@@ -116,6 +127,10 @@ body{
   font-size: 2em;
 }
 
+.slide h2{
+  margin-bottom: 0.5em;
+}
+
 .incremental, .incremental *, .incremental *:after {color:#cde4d3;}
 
 .slide.full{
@@ -124,6 +139,10 @@ body{
   width: 100%;
   margin: 0 auto;
   text-align: center;
+}
+
+.slide.full h1{
+  display: none;
 }
 
 .slide.tight{
@@ -155,4 +174,26 @@ img#m05, img#m06, img#m07 {
 	position:absolute;
 	top:300px;
 	//left:33%;
+}
+
+#controls #navLinks a,
+#controls #navLinks a:active{
+  background: transparent center center no-repeat;
+  text-indent: -20000px;
+  height: 30px;
+  width: 30px;
+  display: inline-block;
+  color: rgba(0,0,0,0);
+}
+
+#navLinks a#next{
+  background-image: url(assets/next.png);
+}
+
+#navLinks a#prev{
+  background-image: url(assets/prev.png);
+}
+
+#navLinks a#toggle{
+  background-image: url(assets/toggle.png);
 }
